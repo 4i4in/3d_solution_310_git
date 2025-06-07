@@ -10,7 +10,7 @@ function exe_perform_3d_draw_sequence_for_cam(_current_cam)
 			if _current_cam.g_buff_full[0] < 1//empty spaces on gbuff exist
 				{
 					if game_time mod _current_cam.g_buff_full[1] == 0
-					_current_cam.g_buff_full[0] = dsss(_current_cam);
+					_current_cam.g_buff_full[0] = exe_return_g_buff_full_buffer(_current_cam);//somehow dsss was here and in other copies, file corupted?
 				}
 			else
 				{
